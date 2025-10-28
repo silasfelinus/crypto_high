@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/test-utils'
+    '@nuxt/test-utils',
+    '@nuxtjs/tailwindcss',
+    '@prisma/nuxt',
+    '@pinia/nuxt'
   ]
 })
