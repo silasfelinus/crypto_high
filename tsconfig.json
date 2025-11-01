@@ -1,18 +1,14 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "files": [],
-  "references": [
-    {
-      "path": "./.nuxt/tsconfig.app.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#imports": [".nuxt/imports"],
+      "~/*": ["./*"],
+      "@/*": ["./*"]
     },
-    {
-      "path": "./.nuxt/tsconfig.server.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.shared.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.node.json"
-    }
-  ]
+    "types": ["nuxt", "@nuxt/content", "vite/client"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue", "types/**/*.d.ts"],
+  "exclude": ["node_modules"]
 }

@@ -15,12 +15,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/tailwind.css'],
 
 
-  image: {
-    dir: 'public/images',
-    inject: true
-  },
-
-
   experimental: {
     payloadExtraction: true
   }
