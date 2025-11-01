@@ -1,8 +1,7 @@
-// nuxt.config.ts
-export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+import { defineNuxtConfig } from 'nuxt/config'
 
+export default defineNuxtConfig({
+  // ...
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -11,11 +10,5 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt'
   ],
-
-  css: ['~/assets/css/tailwind.css'],
-
-
-  experimental: {
-    payloadExtraction: true
-  }
+  css: ['@/assets/css/tailwind.css'], 
 })
